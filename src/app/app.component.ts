@@ -10,7 +10,7 @@ import { DataService } from './Services/data.service';
 })
 export class AppComponent {
   title = 'Chandru';
-  name = "Algular";
+  name = "Algular application";
   constructor(public dataService: DataService) {
 
   }
