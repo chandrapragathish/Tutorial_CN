@@ -1,0 +1,19 @@
+<input [(ngModel)]='value' #Inputvalue> {{value}}
+<button (click)="addUser(Inputvalue.value)">Add</button>
+<div>
+   date : {{day|date}}
+   <br />
+   Number : {{num | number:'4.1-1'}}
+   <br />
+   Square : {{squareNo | squre:'6'}}
+
+</div>
+
+<div *ngFor="let user of users | filter:'age':21">
+   {{user.name}}
+</div>
+
+
+<div>Async Data : {{jsondata | async | json}}</div>
+
+<div>Date : {{date$|async}} </div>

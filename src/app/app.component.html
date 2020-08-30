@@ -1,0 +1,73 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+<!-- Toolbar -->
+
+<span>{{ title }} App is running! </span>
+<app-test></app-test>
+<app-modulecomponent></app-modulecomponent>
+
+<!-- {{dataService.count}}
+<br>
+{{dataService.Print()}}
+
+<br> -->
+<!-- <button (click)="dataService.IncreaseCount()">Increase</button> -->
+<button>Count</button>
+
+<p bind-class="classname">
+    Attribute binding.
+</p>
+{{InpName}}
+<!-- <input  [(ngModel)]="InpName"/> -->
+<input id="inp" (change)="Onchange($event)">
+
+<!-- Template reference -->
+<br>
+<br>
+<div #UserDiv>
+    <input #User>
+    {{User.value}}
+    <button (click)="Sub(User,UserDiv)">Click</button>
+</div>
+
+<!-- ---------Input and output Decarators -->
+<!-- <Hello aliasName='{{name}}' (sendData)='receiveData($event)'>  </Hello> -->
+
+<!-- Life cycle hooks-1 -->
+<Hello *ngIf="Show" aliasName='{{name}}' (sendData)='receiveData($event)'> </Hello>
+<br>
+<button (click)='Toggle()'>Toggle</button>
+
+<input [(ngModel)]="name" />
+
+<!-- ---------------------------------------------------------- -->
+
+<app-userform><app-field Type="Content"></app-field></app-userform>
+
+
+<!-- StyleSheet -->
+<p class="test">
+    This is style from appcomponent
+</p>
+<Hello> </Hello>
+
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+
+<router-outlet></router-outlet>
